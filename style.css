@@ -4,6 +4,7 @@
   --text-color-w: #fff;
   --text-color-b: #000;
   --text-color-g: #003600;
+  --bg-color: #011202;
   --border-color: rgb(255, 255, 255, 0.5);
   --border-left-color: rgb(255, 255, 255, 0.9);
   --surface-color: rgba(255,255,200,0.7063200280112045);
@@ -13,10 +14,9 @@
 body {
   background-image: url(https://i.ibb.co/j66ZmP1/bbf53d7f-98d8-4299-927b-e827f785b6fb.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 550px;
   background-repeat: no-repeat;
-  /* background: rgb(0,52,2);
-  background: linear-gradient(90deg, rgba(0,52,2,1) 0%, rgba(72,233,71,1) 50%, rgba(0,52,2,1) 100%); */
+  background-color: var(--bg-color); 
 }
 
 #container {
