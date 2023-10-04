@@ -4,7 +4,7 @@
   --text-color-w: #fff;
   --text-color-b: #000;
   --text-color-g: #003600;
-  --bg-color: #011202;
+  --bg-color: #000601;
   --border-color: rgb(255, 255, 255, 0.5);
   --border-left-color: rgb(255, 255, 255, 0.9);
   --surface-color: rgba(255,255,200,0.7063200280112045);
@@ -14,7 +14,7 @@
 body {
   background-image: url(https://i.ibb.co/j66ZmP1/bbf53d7f-98d8-4299-927b-e827f785b6fb.jpg);
   background-position: center;
-  background-size: 550px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--bg-color); 
 }
