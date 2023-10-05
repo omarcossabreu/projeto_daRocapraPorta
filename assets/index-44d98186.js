@@ -18,5 +18,5 @@
 </ul>
 `;const c=document.querySelector("#footer");c.innerHTML=`
   <span>Copyright da Roça pra Porta - 2023. </br> Todos os direitos reservados.</span>
-  <span><a href="https://curr.to/meus-links">Criado por Marcos Abreu</a></span>
+  <span><a href="https://curr.to/Meus-Links" target="_blank">Criado por Marcos Abreu</a></span>
   `;const t={element:document.querySelector(".alert-profile"),isOpen:!1,open(){t.element.classList.add("open"),t.isOpen=!0},close(){t.element.classList.remove("open"),t.isOpen=!1}},l=document.getElementById("logo");l.addEventListener("click",()=>{t.isOpen?t.close():t.open()});
