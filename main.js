@@ -25,7 +25,7 @@ links.innerHTML = (`
 const footer = document.querySelector("#footer")
 footer.innerHTML = (`
   <span>Copyright da Roça pra Porta - 2023. </br> Todos os direitos reservados.</span>
-  <span><a href="https://curr.to/meus-links">Criado por Marcos Abreu</a></span>
+  <span><a href="https://curr.to/Meus-Links">Criado por Marcos Abreu</a></span>
   `)
 
   // Ao clicar na logo
