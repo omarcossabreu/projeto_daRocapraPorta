@@ -15,7 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Node e NPM
 - Git e Github
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://curr.to/daRocapraPorta)
 
 ## :memo: Licença
 

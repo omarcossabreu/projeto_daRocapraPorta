@@ -5,6 +5,7 @@
   --text-color-b: #000;
   --text-color-g: #003600;
   --bg-color: #000601;
+  --bg-color-alert: #E86826;
   --border-color: rgb(255, 255, 255, 0.5);
   --border-left-color: rgb(255, 255, 255, 0.9);
   --surface-color: rgba(255,255,200,0.7063200280112045);
@@ -16,7 +17,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--bg-color); 
+  background-color: var(--bg-color);
 }
 
 #container {
@@ -35,21 +36,16 @@ body {
   font-family: "Ysabeau SC", sans-serif;
 }
 
-.profile p {
-  color: var(--text-color-b);
-  font-size: 1.07em;
-  font-weight: bold;
-}
-
 .profile img {
   border-radius: 50%;
   width: 140px;
-  margin: 24px auto 10px;
+  margin: 45px auto 10px;
   transition: transform .5s all ease-in-out;
 }
 
 .profile img:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 #links {
@@ -60,7 +56,7 @@ body {
 }
 
 #links .icon {
-  margin-left: 15%; 
+  margin-left: 10%;
 }
 
 #links ul {
@@ -90,13 +86,13 @@ body {
   color: var(--text-color-g);
   background: radial-gradient(circle, rgba(178,238,174,1) 0%, rgba(171,233,148,1) 100%);
   border-radius: 8px;
-  box-shadow: 0 0 5px var(--bg-shadow), 0 0 25px var(--bg-shadow), 0 0 50px var(--bg-shadow), 0 0 100px var(--bg-shadow);
+  box-shadow: 0 0 5px var(--surface-color), 0 0 25px var(--bg-shadow), 0 0 50px var(--surface-color), 0 0 100px var(--bg-shadow);
 }
 
 #footer {
   display: flex;
   justify-content: space-around;
-  gap: 40px; 
+  gap: 40px;
   margin: 20px 0 0 0;
   width: 100%;
   font-size: 0.7em;
@@ -106,12 +102,42 @@ body {
   color: var(--text-color-w);
 }
 
+.alert-profile {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  padding: .6rem 0;
+  color: var(--text-color-w);
+  background: var(--bg-color-alert);
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: transform .5s;
+}
+
+ .open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close {
+  transition: transform .5s;
+}
+
+
 @media (max-width: 430px) {
+  .profile p {
+    padding: 10px;
+  }
+
   #links ul li a {
   gap: 5%;
   }
     #links .icon {
-    margin-left: 6%; 
+    margin-left: 6%;
     font-size: 20px;
   };
 }

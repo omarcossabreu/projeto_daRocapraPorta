@@ -1,14 +1,6 @@
 import './reset.css'
 import './style.css'
 
-document.querySelector('.profile').innerHTML = `
-<header>
-  <img src="https://i.ibb.co/0JF6hRx/366189644-1047365332962027-6864602880054301877-n.jpg" alt="imagem de perfil"/>
-<div id="userProfile">
-  <h1>Da Roça Pra Porta</h1>
-  <p>Cultivamos, higienizamos e processamos com qualidade os nossos vegetais.</p>
-</div>`
-
 const links = document.querySelector("#links")
 links.innerHTML = (`
 <ul>
@@ -35,3 +27,30 @@ footer.innerHTML = (`
   <span>Copyright da Roça pra Porta - 2023. </br> Todos os direitos reservados.</span>
   <span><a href="https://curr.to/meus-links">Criado por Marcos Abreu</a></span>
   `)
+
+  // Ao clicar na logo
+  const boasVindas = {
+    element: document.querySelector(".alert-profile"),
+    isOpen: false,
+   
+      open() {
+       boasVindas.element.classList.add('open')
+       boasVindas.isOpen = true
+      },
+      close() {
+        boasVindas.element.classList.remove('open')
+        boasVindas.isOpen = false
+      }
+    }
+  
+  const imagem = document.getElementById("logo")
+
+  imagem.addEventListener("click", () => {
+    if(boasVindas.isOpen) {
+      boasVindas.close()
+    } else {
+      boasVindas.open()
+    }
+  });
+
+ 
