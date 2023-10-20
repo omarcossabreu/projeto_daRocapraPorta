@@ -3,7 +3,7 @@
   <li>
     <a href="https://www.whatsapp.com/catalog/5521966258778/?app_absent=0" target="_blank">
     <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
-    Nosso Catálogo pelo WhatsApp</a>
+    Catálogo pelo WhatsApp</a>
   </li>
   <li>
     <a href="https://darocapraporta.lojavirtualnuvem.com.br/" target="_blank">
